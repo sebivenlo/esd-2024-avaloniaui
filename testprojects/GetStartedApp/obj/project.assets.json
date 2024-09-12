@@ -1525,11 +1525,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\GetStartedApp\\GetStartedApp.csproj",
+      "projectUniqueName": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\GetStartedApp.csproj",
       "projectName": "GetStartedApp",
-      "projectPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\GetStartedApp\\GetStartedApp.csproj",
+      "projectPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\GetStartedApp.csproj",
       "packagesPath": "C:\\Users\\moism\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\GetStartedApp\\obj\\",
+      "outputPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moism\\AppData\\Roaming\\NuGet\\NuGet.Config",
