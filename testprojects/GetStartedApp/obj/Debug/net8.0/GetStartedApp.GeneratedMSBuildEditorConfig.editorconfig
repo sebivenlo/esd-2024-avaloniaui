@@ -15,12 +15,12 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GetStartedApp
-build_property.ProjectDir = C:\Users\moism\Desktop\Fontys_2024_2025\ESD\GetStartedApp\
+build_property.ProjectDir = C:\Users\moism\Desktop\Fontys_2024_2025\ESD\esd-2024-avaloniaui\testprojects\GetStartedApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/moism/Desktop/Fontys_2024_2025/ESD/GetStartedApp/App.axaml]
+[C:/Users/moism/Desktop/Fontys_2024_2025/ESD/esd-2024-avaloniaui/testprojects/GetStartedApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/moism/Desktop/Fontys_2024_2025/ESD/GetStartedApp/Views/MainWindow.axaml]
+[C:/Users/moism/Desktop/Fontys_2024_2025/ESD/esd-2024-avaloniaui/testprojects/GetStartedApp/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

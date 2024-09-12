@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+N3gZU2kE88=",
+  "dgSpecHash": "ZaEnfur8dE4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\GetStartedApp\\GetStartedApp.csproj",
+  "projectFilePath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\GetStartedApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moism\\.nuget\\packages\\avalonia\\11.1.0\\avalonia.11.1.0.nupkg.sha512",
     "C:\\Users\\moism\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.22045.20230930\\avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",
