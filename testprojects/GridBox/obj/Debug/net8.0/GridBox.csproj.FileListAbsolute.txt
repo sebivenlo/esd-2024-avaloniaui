@@ -67,3 +67,6 @@ c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avalo
 c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avaloniaui\testprojects\GridBox\obj\Debug\net8.0\GridBox.csproj.Up2Date
 c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avaloniaui\testprojects\GridBox\obj\Debug\net8.0\GridBox.genruntimeconfig.cache
 c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avaloniaui\testprojects\GridBox\obj\Debug\net8.0\ref\GridBox.dll
+c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avaloniaui\testprojects\GridBox\obj\Debug\net8.0\GridBox.dll
+c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avaloniaui\testprojects\GridBox\obj\Debug\net8.0\refint\GridBox.dll
+c:\Users\Glenn\Documents\school\Semester7\ESD\avalonia_assignment\esd-2024-avaloniaui\testprojects\GridBox\obj\Debug\net8.0\GridBox.pdb
