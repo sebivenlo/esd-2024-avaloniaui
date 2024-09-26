@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GridPersona")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18f226f5e3318fff53d1030bdd3f08f1fdd6b065")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GridPersona")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GridPersona")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
