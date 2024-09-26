@@ -1,0 +1,38 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+<<<<<<< HEAD:testprojects/GridBox/obj/Debug/net8.0/GridBox.GeneratedMSBuildEditorConfig.editorconfig
+build_property.RootNamespace = GridBox
+build_property.ProjectDir = c:\Users\moism\Desktop\Fontys_2024_2025\ESD\esd-2024-avaloniaui\testprojects\GridBox\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[c:/Users/moism/Desktop/Fontys_2024_2025/ESD/esd-2024-avaloniaui/testprojects/GridBox/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/moism/Desktop/Fontys_2024_2025/ESD/esd-2024-avaloniaui/testprojects/GridBox/Views/MainWindow.axaml]
+=======
+build_property.RootNamespace = GridPersona
+build_property.ProjectDir = /workspace/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/workspace/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/workspace/Views/MainWindow.axaml]
+>>>>>>> a819be08c9bd610ad274479523264acd5acb4a6e:testprojects/GridPersona/obj/Debug/net8.0/GridPersona.GeneratedMSBuildEditorConfig.editorconfig
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
