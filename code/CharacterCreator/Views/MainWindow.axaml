@@ -15,6 +15,28 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <!-- <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->
 
+    <!-- <Button HorizontalAlignment="Center">Calculate</Button> -->
+
+    <StackPanel>
+    <Border Margin="5" 
+      CornerRadius="10"
+      Background="LightBlue">
+      <TextBlock Margin="5"
+         FontSize="24" 
+         HorizontalAlignment="Center"
+         Text="Avalonia UI workshop: Character Creator">
+      </TextBlock>
+    </Border>
+    <Grid ShowGridLines="False"  Margin="5" 
+      ColumnDefinitions="120, 100" 
+      RowDefinitions="Auto, Auto, Auto">
+     <Label Grid.Row="0" Grid.Column="0" Margin="10">Celsius</Label>
+     <TextBox Name="celsius" KeyUp="ToFahrenheit" Grid.Row="0" Grid.Column="1" Margin="0 5" Text="0"/>
+     <Label Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</Label>
+     <TextBox IsReadOnly="True" Name="fahrenheit" Grid.Row="1"  Grid.Column="1" Margin="0 5" Text="0"/>
+     <Button Grid.Row="2" Grid.Column="1" Margin="0 5" Click="ButtonClicked">Calculate</Button>
+</Grid>
+  </StackPanel>
 </Window>
