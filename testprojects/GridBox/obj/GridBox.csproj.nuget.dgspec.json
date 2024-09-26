@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj": {}
+    "c:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj": {
+    "c:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj",
+        "projectUniqueName": "c:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj",
         "projectName": "GridBox",
-        "projectPath": "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj",
-        "packagesPath": "C:\\Users\\Glenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\testprojects\\GridBox\\obj\\",
+        "projectPath": "c:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GridBox\\GridBox.csproj",
+        "packagesPath": "C:\\Users\\moism\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GridBox\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Glenn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\moism\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

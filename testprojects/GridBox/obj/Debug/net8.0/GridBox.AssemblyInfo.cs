@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GridBox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d1b0b49088bb7729cfa8f589e03811aeeeee582")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51bb05d34dc7d7a3c61b939cc89edafb9b685e8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GridBox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GridBox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
