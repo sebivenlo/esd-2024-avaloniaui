@@ -19,7 +19,7 @@
 
     <!-- <Button HorizontalAlignment="Center">Calculate</Button> -->
 
-    <StackPanel>
+    <StackPanel Margin="20">
     <Border Margin="5" 
       CornerRadius="10"
       Background="LightBlue">
@@ -29,14 +29,102 @@
          Text="Avalonia UI workshop: Character Creator">
       </TextBlock>
     </Border>
-    <Grid ShowGridLines="False"  Margin="5" 
-      ColumnDefinitions="120, 100" 
-      RowDefinitions="Auto, Auto, Auto">
-     <Label Grid.Row="0" Grid.Column="0" Margin="10">Celsius</Label>
-     <TextBox Name="celsius" KeyUp="ToFahrenheit" Grid.Row="0" Grid.Column="1" Margin="0 5" Text="0"/>
-     <Label Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</Label>
-     <TextBox IsReadOnly="True" Name="fahrenheit" Grid.Row="1"  Grid.Column="1" Margin="0 5" Text="0"/>
-     <Button Grid.Row="2" Grid.Column="1" Margin="0 5" Click="ButtonClicked">Calculate</Button>
-</Grid>
+
+    <!-- First grid -->
+    <Grid>
+        <!-- Define four rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- Define four columns for each row -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+<!-- <Label Grid.Row="3" Grid.Column="0" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center">Description</Label> -->
+
+        <Label Grid.Row="0" Grid.Column="0" >Name</Label>
+        <TextBox Name="name" Grid.Row="0" Grid.Column="1"/>
+
+        <Label Grid.Row="1" Grid.Column="0" >Gender</Label>
+        <!-- <TextBox Name="gen" Grid.Row="1" Grid.Column="1"/> -->
+        <ComboBox Name="gen" Grid.Row="1" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
+            <ComboBoxItem>Female</ComboBoxItem>
+            <ComboBoxItem>Male</ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="2" Grid.Column="0" >Class</Label>
+        <ComboBox Name="choice_class" Grid.Row="2" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
+            <ComboBoxItem>Milquetoast</ComboBoxItem>
+            <ComboBoxItem>Lone Survivor</ComboBoxItem>
+            <ComboBoxItem>Troubled Childhood</ComboBoxItem>
+            <ComboBoxItem>Violent Past</ComboBoxItem>
+            <ComboBoxItem>Professional</ComboBoxItem>
+            <ComboBoxItem>Military Veteran</ComboBoxItem>
+            <ComboBoxItem>Noble Scion</ComboBoxItem>
+            <ComboBoxItem>Cruel Fate</ComboBoxItem>
+            <ComboBoxItem>Waste of Skin</ComboBoxItem>
+            <ComboBoxItem>Gamebreaker</ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="3" Grid.Column="0" >Description</Label>
+        <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="100" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+        <Label Grid.Row="0" Grid.Column="2" >Height</Label>
+        <TextBox Name="height" Grid.Row="0" Grid.Column="3"/>
+
+        <Label Grid.Row="1" Grid.Column="2" >Width</Label>
+        <TextBox Name="width" Grid.Row="1" Grid.Column="3"/>
+    </Grid>
+
+    <Separator Height="20" Background="Gray" />
+
+<!-- Second grid -->
+    <Grid>
+        <!-- Define six rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- Define four columns for each row -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" >Vitality</Label>
+        <TextBox IsReadOnly="True" Name="vit" Grid.Row="0" Grid.Column="1"/>
+
+        <Label Grid.Row="1" Grid.Column="0" >Endurance</Label>
+        <TextBox IsReadOnly="True" Name="end" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Grid.Row="2" Grid.Column="0" >Strength</Label>
+        <TextBox IsReadOnly="True" Name="str" Grid.Row="2" Grid.Column="1"/>
+
+        <Label Grid.Row="3" Grid.Column="0" >Skill</Label>
+        <TextBox IsReadOnly="True" Name="ski" Grid.Row="3" Grid.Column="1"/>
+
+        <Label Grid.Row="4" Grid.Column="0" >Bloodtinge</Label>
+        <TextBox IsReadOnly="True" Name="blo" Grid.Row="4" Grid.Column="1"/>
+
+        <Label Grid.Row="5" Grid.Column="0" >Arcane</Label>
+        <TextBox IsReadOnly="True" Name="arc" Grid.Row="5" Grid.Column="1"/>
+    </Grid>
+
   </StackPanel>
 </Window>
