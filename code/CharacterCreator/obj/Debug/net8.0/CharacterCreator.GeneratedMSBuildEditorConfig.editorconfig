@@ -22,8 +22,5 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/Glenn/Documents/school/Semester7/ESD/avalonia_assignment/esd-2024-avaloniaui/code/CharacterCreator/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/Glenn/Documents/school/Semester7/ESD/avalonia_assignment/esd-2024-avaloniaui/code/CharacterCreator/Views/CharacterView.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
 [C:/Users/Glenn/Documents/school/Semester7/ESD/avalonia_assignment/esd-2024-avaloniaui/code/CharacterCreator/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -17,7 +17,7 @@
 
     <!-- Voor het geval als dit niet werkt, transition ding weghalen -->
     <!-- TransitioningContentControl to enable smooth transitions -->
-    <TransitioningContentControl Content="{Binding CurrentPage}">
+    
 
     <StackPanel Margin="20">
     <Border Margin="5" 
@@ -125,10 +125,5 @@
         <TextBox IsReadOnly="True" Name="arc" Grid.Row="5" Grid.Column="1"/>
     </Grid>
 
-<Button Content="Create character"
-        HorizontalAlignment="Center" VerticalAlignment="Center"
-        Command="{Binding SwapToCharacterView}" />
-
   </StackPanel>
-  </TransitioningContentControl>
 </Window>
