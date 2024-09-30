@@ -29,6 +29,9 @@ public partial class App : Application
         // }
 
         // base.OnFrameworkInitializationCompleted();
+
+        
+
         var mainWindow = new MainWindow
         {
             DataContext = new MainWindowViewModel()

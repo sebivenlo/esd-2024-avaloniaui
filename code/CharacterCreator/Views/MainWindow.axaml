@@ -62,11 +62,17 @@
         </ComboBox>
 
         <Label Grid.Row="2" Grid.Column="0" >Class</Label>
-        <ComboBox Name="choice_class" Grid.Row="2" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
-            <ComboBoxItem>Strong</ComboBoxItem>
-            <ComboBoxItem>Agile</ComboBoxItem>
-            <ComboBoxItem>Majestic</ComboBoxItem>
-            <ComboBoxItem>Weak</ComboBoxItem>
+        <ComboBox Name="choice_class" 
+        Grid.Row="2" 
+        Grid.Column="1" 
+        MaxDropDownHeight="100" 
+        SelectedItem="{Binding SelectedClass}"
+        ItemsSource="{Binding ClassChoices}">
+        <ComboBox.ItemTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding ClassName}" />
+            </DataTemplate>
+        </ComboBox.ItemTemplate>
         </ComboBox>
 
         <Label Grid.Row="3" Grid.Column="0" >Victory Quote</Label>
