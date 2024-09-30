@@ -34,5 +34,29 @@
       <TextBox Grid.Row="1"  Grid.Column="1" Margin="0 5" Text="0" Name="fahrenheit" IsReadOnly="True"/>
       <Button Grid.Row="2" Grid.Column="1" Margin="0 5" Click="ButtonClicked">Calculate</Button>
     </Grid>
+    <Canvas Background="Yellow" Width="300" Height="270">
+      <Ellipse Fill="Green" Width="58" Height="58" Canvas.Left="71" Canvas.Top="40"/>
+      <Path Fill="Blue" Canvas.Left="60" Canvas.Top="97.5">
+        <Path.Data>
+          <PathGeometry>
+            <PathFigure StartPoint="0,15" IsClosed="True">
+              <!-- Left sleeve -->
+              <LineSegment Point="0,0" />
+              <LineSegment Point="20,0" />
+              <!-- Neckline -->
+              <LineSegment Point="30,5" />
+              <LineSegment Point="50,5" />
+              <!-- Right sleeve -->
+              <LineSegment Point="60,0" />
+              <LineSegment Point="80,0" />
+              <LineSegment Point="80,15" />
+              <!-- Body -->
+              <LineSegment Point="70,75" />
+              <LineSegment Point="10,75" />
+            </PathFigure>
+          </PathGeometry>
+        </Path.Data>
+      </Path>
+    </Canvas>
   </StackPanel>
 </Window>
