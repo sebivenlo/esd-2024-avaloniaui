@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/CharacterCreator.csproj" // Adjust this if your project file name is different
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

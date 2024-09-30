@@ -15,9 +15,9 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <!-- <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->
-
-    <!-- <Button HorizontalAlignment="Center">Calculate</Button> -->
+    <!-- Voor het geval als dit niet werkt, transition ding weghalen -->
+    <!-- TransitioningContentControl to enable smooth transitions -->
+    <TransitioningContentControl Content="{Binding CurrentPage}">
 
     <StackPanel Margin="20">
     <Border Margin="5" 
@@ -72,7 +72,6 @@
             <ComboBoxItem>Noble Scion</ComboBoxItem>
             <ComboBoxItem>Cruel Fate</ComboBoxItem>
             <ComboBoxItem>Waste of Skin</ComboBoxItem>
-            <ComboBoxItem>Gamebreaker</ComboBoxItem>
         </ComboBox>
 
         <Label Grid.Row="3" Grid.Column="0" >Description</Label>
@@ -126,5 +125,10 @@
         <TextBox IsReadOnly="True" Name="arc" Grid.Row="5" Grid.Column="1"/>
     </Grid>
 
+<Button Content="Create character"
+        HorizontalAlignment="Center" VerticalAlignment="Center"
+        Command="{Binding SwapToCharacterView}" />
+
   </StackPanel>
+  </TransitioningContentControl>
 </Window>

@@ -11,5 +11,17 @@
   
     <Application.Styles>
         <FluentTheme />
+
+        <!-- Other styles -->
+
+    <!-- Style for TransitioningContentControl -->
+    <!-- <Style Selector="TransitioningContentControl">
+        <Setter Property="PageTransition">
+            <Setter.Value>
+                <PageSlide(SlideAxis=Horizontal, Duration="0:0:0.5")/>
+            </Setter.Value>
+        </Setter>
+    </Style> -->
+
     </Application.Styles>
 </Application>
