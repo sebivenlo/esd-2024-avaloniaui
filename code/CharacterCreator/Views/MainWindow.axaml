@@ -63,19 +63,14 @@
 
         <Label Grid.Row="2" Grid.Column="0" >Class</Label>
         <ComboBox Name="choice_class" Grid.Row="2" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
-            <ComboBoxItem>Milquetoast</ComboBoxItem>
-            <ComboBoxItem>Lone Survivor</ComboBoxItem>
-            <ComboBoxItem>Troubled Childhood</ComboBoxItem>
-            <ComboBoxItem>Violent Past</ComboBoxItem>
-            <ComboBoxItem>Professional</ComboBoxItem>
-            <ComboBoxItem>Military Veteran</ComboBoxItem>
-            <ComboBoxItem>Noble Scion</ComboBoxItem>
-            <ComboBoxItem>Cruel Fate</ComboBoxItem>
-            <ComboBoxItem>Waste of Skin</ComboBoxItem>
+            <ComboBoxItem>Strong</ComboBoxItem>
+            <ComboBoxItem>Agile</ComboBoxItem>
+            <ComboBoxItem>Majestic</ComboBoxItem>
+            <ComboBoxItem>Weak</ComboBoxItem>
         </ComboBox>
 
-        <Label Grid.Row="3" Grid.Column="0" >Description</Label>
-        <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="100" AcceptsReturn="True" TextWrapping="Wrap"/>
+        <Label Grid.Row="3" Grid.Column="0" >Victory Quote</Label>
+        <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="50" AcceptsReturn="True" TextWrapping="Wrap"/>
 
         <Label Grid.Row="0" Grid.Column="2" >Height</Label>
         <TextBox Name="height" Grid.Row="0" Grid.Column="3"/>
@@ -95,7 +90,6 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         
         <!-- Define four columns for each row -->
@@ -106,23 +100,23 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         
-        <Label Grid.Row="0" Grid.Column="0" >Vitality</Label>
-        <TextBox IsReadOnly="True" Name="vit" Grid.Row="0" Grid.Column="1"/>
+        <!-- Stats grid -->
 
-        <Label Grid.Row="1" Grid.Column="0" >Endurance</Label>
-        <TextBox IsReadOnly="True" Name="end" Grid.Row="1" Grid.Column="1"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" >Vitality</TextBlock>
+        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="vit" Grid.Row="0" Grid.Column="1"/>
 
-        <Label Grid.Row="2" Grid.Column="0" >Strength</Label>
-        <TextBox IsReadOnly="True" Name="str" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" >Endurance</TextBlock>
+        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="end" Grid.Row="1" Grid.Column="1"/>
 
-        <Label Grid.Row="3" Grid.Column="0" >Skill</Label>
-        <TextBox IsReadOnly="True" Name="ski" Grid.Row="3" Grid.Column="1"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" >Strength</TextBlock>
+        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="str" Grid.Row="2" Grid.Column="1"/>
 
-        <Label Grid.Row="4" Grid.Column="0" >Bloodtinge</Label>
-        <TextBox IsReadOnly="True" Name="blo" Grid.Row="4" Grid.Column="1"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" >Skill</TextBlock>
+        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="ski" Grid.Row="3" Grid.Column="1"/>
 
-        <Label Grid.Row="5" Grid.Column="0" >Arcane</Label>
-        <TextBox IsReadOnly="True" Name="arc" Grid.Row="5" Grid.Column="1"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" >Arcane</TextBlock>
+        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="arc" Grid.Row="4" Grid.Column="1"/>
+
     </Grid>
 
   </StackPanel>
