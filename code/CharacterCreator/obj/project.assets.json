@@ -2510,24 +2510,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Glenn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\moism\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\code\\CharacterCreator\\CharacterCreator.csproj",
+      "projectUniqueName": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\code\\CharacterCreator\\CharacterCreator.csproj",
       "projectName": "CharacterCreator",
-      "projectPath": "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\code\\CharacterCreator\\CharacterCreator.csproj",
-      "packagesPath": "C:\\Users\\Glenn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Glenn\\Documents\\school\\Semester7\\ESD\\avalonia_assignment\\esd-2024-avaloniaui\\code\\CharacterCreator\\obj\\",
+      "projectPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\code\\CharacterCreator\\CharacterCreator.csproj",
+      "packagesPath": "C:\\Users\\moism\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\code\\CharacterCreator\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Glenn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\moism\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
