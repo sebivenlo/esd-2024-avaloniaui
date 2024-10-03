@@ -55,6 +55,28 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
 
+    private int _height;
+    public int HeightCharacter
+    {
+        get => _height;
+        set
+        {
+            _height = value;
+            OnPropertyChanged(nameof(HeightCharacter));
+        }
+    }
+
+    private int _width;
+    public int WidthCharacter
+    {
+        get => _width;
+        set
+        {
+            _width = value;
+            OnPropertyChanged(nameof(WidthCharacter));
+        }
+    }
+
     private int _endurance;
     public int Endurance
     {
@@ -104,6 +126,8 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         ReadOnlyOn = true;
         LoadClassChoices();
         SelectedClass = ClassChoices.FirstOrDefault();
+        HeightCharacter = 200;
+        WidthCharacter = 80;
     }
 
     private void LoadClassChoices()
@@ -131,6 +155,7 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
             else 
             {
                 ReadOnlyOn = true;
+                ResetHeightAndWidth();
             }
 
             Vitality = stats.ContainsKey("Vitality") ? stats["Vitality"] : 0;
@@ -139,6 +164,12 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
             Skill = stats.ContainsKey("Skill") ? stats["Skill"] : 0;
             Arcane = stats.ContainsKey("Arcane") ? stats["Arcane"] : 0;
         }
+    }
+
+    private void ResetHeightAndWidth()
+    {
+        HeightCharacter = 200;
+        WidthCharacter = 80;
     }
 
     public new event PropertyChangedEventHandler PropertyChanged;

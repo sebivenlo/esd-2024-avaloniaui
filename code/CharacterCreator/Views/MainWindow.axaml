@@ -19,114 +19,128 @@
     <!-- TransitioningContentControl to enable smooth transitions -->
     
 
-    <StackPanel Margin="20">
-    <Border Margin="5" 
-      CornerRadius="10"
-      Background="LightBlue">
-      <TextBlock Margin="5"
-         FontSize="24" 
-         HorizontalAlignment="Center"
-         Text="Avalonia UI workshop: Character Creator">
-      </TextBlock>
-    </Border>
-
-    <!-- First grid -->
-    <Grid>
-        <!-- Define four rows -->
+    <Grid Margin="20">
+        <!-- Define two rows and two columns -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
-        <!-- Define four columns for each row -->
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        
-<!-- <Label Grid.Row="3" Grid.Column="0" 
-                   HorizontalAlignment="Center" VerticalAlignment="Center">Description</Label> -->
 
-        <Label Grid.Row="0" Grid.Column="0" >Name</Label>
-        <TextBox Name="name" Grid.Row="0" Grid.Column="1"/>
+        <!-- Top-left: Name, Gender, Class and Victory Quote -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="10">
+            <Border Margin="5" CornerRadius="10" Background="LightBlue">
+                <TextBlock Margin="5" FontSize="24" HorizontalAlignment="Center" Text="Avalonia UI workshop: Character Creator"/>
+            </Border>
 
-        <Label Grid.Row="1" Grid.Column="0" >Gender</Label>
-        <!-- <TextBox Name="gen" Grid.Row="1" Grid.Column="1"/> -->
-        <ComboBox Name="gen" Grid.Row="1" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
-            <ComboBoxItem>Female</ComboBoxItem>
-            <ComboBoxItem>Male</ComboBoxItem>
-        </ComboBox>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="2" Grid.Column="0" >Class</Label>
-        <ComboBox Name="choice_class" 
-        Grid.Row="2" 
-        Grid.Column="1" 
-        MaxDropDownHeight="100" 
-        SelectedItem="{Binding SelectedClass}"
-        ItemsSource="{Binding ClassChoices}">
-        <ComboBox.ItemTemplate>
-            <DataTemplate>
-                <TextBlock Text="{Binding ClassName}" />
-            </DataTemplate>
-        </ComboBox.ItemTemplate>
-        </ComboBox>
+                <Label Grid.Row="0" Grid.Column="0">Name</Label>
+                <TextBox Name="name" Grid.Row="0" Grid.Column="1"/>
 
-        <Label Grid.Row="3" Grid.Column="0" >Victory Quote</Label>
-        <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="50" AcceptsReturn="True" TextWrapping="Wrap"/>
+                <Label Grid.Row="1" Grid.Column="0">Gender</Label>
+                <ComboBox Name="gen" Grid.Row="1" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
+                    <ComboBoxItem>Female</ComboBoxItem>
+                    <ComboBoxItem>Male</ComboBoxItem>
+                </ComboBox>
 
-        <Label Grid.Row="0" Grid.Column="2" >Height</Label>
-        <!-- <TextBox Name="height" Grid.Row="0" Grid.Column="3"/> -->
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="100" Width="200" FormatString="0" Minimum="1" Name="hei" Grid.Row="0" Grid.Column="3"/>
+                <Label Grid.Row="2" Grid.Column="0">Class</Label>
+                <ComboBox Name="choice_class" Grid.Row="2" Grid.Column="1" MaxDropDownHeight="100" SelectedItem="{Binding SelectedClass}" ItemsSource="{Binding ClassChoices}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ClassName}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
 
-        <Label Grid.Row="1" Grid.Column="2" >Width</Label>
-        <!-- <TextBox Name="width" Grid.Row="1" Grid.Column="3"/> -->
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="100" Width="200" FormatString="0" Minimum="1" Name="wid" Grid.Row="1" Grid.Column="3"/>
+                <Label Grid.Row="3" Grid.Column="0">Victory Quote</Label>
+                <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="50" AcceptsReturn="True" TextWrapping="Wrap"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- Top-right: Height and Width -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0">Height</Label>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding HeightCharacter}" Width="200" FormatString="0" Minimum="1" Name="hei" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Grid.Row="1" Grid.Column="0">Width</Label>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding WidthCharacter}" Width="200" FormatString="0" Minimum="1" Name="wid" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- Bottom-left: Vitality, Endurance, Strength, Skill, and Arcane -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0">Vitality</TextBlock>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Vitality}" Width="300" FormatString="0" Minimum="1" Name="vit" Grid.Row="0" Grid.Column="1"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0">Endurance</TextBlock>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Endurance}" Width="300" FormatString="0" Minimum="1" Name="end" Grid.Row="1" Grid.Column="1"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0">Strength</TextBlock>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Strength}" Width="300" FormatString="0" Minimum="1" Name="str" Grid.Row="2" Grid.Column="1"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0">Skill</TextBlock>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Skill}" Width="300" FormatString="0" Minimum="1" Name="ski" Grid.Row="3" Grid.Column="1"/>
+
+                <TextBlock Grid.Row="4" Grid.Column="0">Arcane</TextBlock>
+                <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Arcane}" Width="300" FormatString="0" Minimum="1" Name="arc" Grid.Row="4" Grid.Column="1"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- Bottom-right: Canvas -->
+        <Canvas x:Name="CharacterCanvas" Background="White" Width="300" Height="270" Grid.Row="1" Grid.Column="1" Margin="10">
+            <Grid Width="{Binding Width, ElementName=CharacterCanvas}" Height="{Binding Height, ElementName=CharacterCanvas}">
+                <Viewbox Stretch="Fill" Width="{Binding WidthCharacter}" Height="{Binding HeightCharacter}">
+                    <Grid>
+                        <!-- Head -->
+                        <Ellipse Fill="Green" Width="58" Height="58" Margin="0,0,0,142"/>
+                        <!-- Torso -->
+                        <Rectangle Fill="Blue" Width="75" Height="80" Margin="0,58,0,62"/>
+                        <!-- Right leg -->
+                        <Rectangle Fill="Red" Width="20" Height="60" Margin="0,138,55,2"/>
+                        <!-- Left leg-->
+                        <Rectangle Fill="Red" Width="20" Height="60" Margin="55,138,0,2"/>
+                    </Grid>
+                </Viewbox>
+            </Grid>
+        </Canvas>
 
     </Grid>
-
-    <Separator Height="20" Background="Gray" />
-
-<!-- Second grid -->
-    <Grid>
-        <!-- Define six rows -->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        
-        <!-- Define four columns for each row -->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="20" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        
-        <!-- Stats grid -->
-
-        <TextBlock Grid.Row="0" Grid.Column="0" >Vitality</TextBlock>
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Vitality}" Width="300" FormatString="0" Minimum="1" Name="vit" Grid.Row="0" Grid.Column="1"/>
-        
-        <TextBlock Grid.Row="1" Grid.Column="0" >Endurance</TextBlock>
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Endurance}" Width="300" FormatString="0" Minimum="1" Name="end" Grid.Row="1" Grid.Column="1"/>
-
-        <TextBlock Grid.Row="2" Grid.Column="0" >Strength</TextBlock>
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Strength}" Width="300" FormatString="0" Minimum="1" Name="str" Grid.Row="2" Grid.Column="1"/>
-
-        <TextBlock Grid.Row="3" Grid.Column="0" >Skill</TextBlock>
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Skill}" Width="300" FormatString="0" Minimum="1" Name="ski" Grid.Row="3" Grid.Column="1"/>
-
-        <TextBlock Grid.Row="4" Grid.Column="0" >Arcane</TextBlock>
-        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Arcane}" Width="300" FormatString="0" Minimum="1" Name="arc" Grid.Row="4" Grid.Column="1"/>
-
-    </Grid>
-
-  </StackPanel>
 </Window>
