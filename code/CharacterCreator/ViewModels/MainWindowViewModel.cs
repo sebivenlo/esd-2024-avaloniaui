@@ -10,13 +10,14 @@ namespace CharacterCreator.ViewModels;
 public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
 {
     private List<IClassChoice?> _classChoices;
-    // private YourCharacter character;
+    private YourCharacter character;
     public List<IClassChoice?> ClassChoices
     {
         get => _classChoices;
         set
         {
             _classChoices = value;
+            // OnPropertyChanged(nameof(ClassChoices));
         }
     }
 
@@ -27,6 +28,7 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         set
         {
             _selectedClass = value;
+            // OnPropertyChanged(nameof(SelectedClass));
             UpdateStats();
         }
     }
