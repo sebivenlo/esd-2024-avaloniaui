@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\Views\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\Views\\MainWindow.axaml",
-              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T11:10:50.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T11:10:44.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\App.axaml",
+              "RelativeToolTip": "App.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T10:13:01.581Z",
+              "WhenOpened": "2024-10-03T11:10:37.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T11:10:31.42Z",
               "EditorCaption": ""
             }
           ]
