@@ -7,7 +7,7 @@ public interface IClassChoice
     string ClassName { get; }
     Dictionary<string, int> GetStats();
 
-    Dictionary<string, int> SetStats(int vit, int end, int str, int ski, int arc, int hei, int wid)
+    Dictionary<string, int> SetStats(int vit, int end, int str, int ski, int arc)
     {
         return new Dictionary<string, int>()
         {
@@ -15,9 +15,7 @@ public interface IClassChoice
             {"Endurance", end},
             {"Strength", str},
             {"Skill", ski},
-            {"Arcane", arc},
-            {"Height", hei},
-            {"Width", wid}
+            {"Arcane", arc}
         };
     }
 }

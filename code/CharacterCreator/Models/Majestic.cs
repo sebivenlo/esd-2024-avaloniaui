@@ -7,14 +7,7 @@ class Majestic : IClassChoice
     private Dictionary<string, int> stats;
     public Majestic()
     {
-        this.stats = new Dictionary<string, int>()
-        {   
-            {"Vitality", 10},
-            {"Endurance", 12},
-            {"Strength", 10},
-            {"Skill", 9},
-            {"Arcane", 14},
-        };
+        this.stats = ((IClassChoice)this).SetStats(10, 12, 10, 9, 14);
     }
 
     string IClassChoice.ClassName => this.GetType().Name;

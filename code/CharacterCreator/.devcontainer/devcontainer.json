@@ -12,7 +12,7 @@
   "settings": {
       "terminal.integrated.defaultProfile.linux": "/bin/bash"
   },
-  "postCreateCommand": "dotnet restore",
+  "postCreateCommand": "dotnet restore && dotnet new install Avalonia.Templates && dotnet restore",
   "mounts": [
       "source=${localWorkspaceFolder}/,target=/workspace,type=bind"
   ],

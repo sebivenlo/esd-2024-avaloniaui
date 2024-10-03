@@ -8,14 +8,7 @@ class Gamebreaker : IClassChoice
 
     public Gamebreaker()
     {
-        this.stats = new Dictionary<string, int>()
-        {
-            {"Vitality", 1},
-            {"Endurance", 1},
-            {"Strength", 1},
-            {"Skill", 1},
-            {"Arcane", 1},
-        };
+        this.stats = ((IClassChoice)this).SetStats(1, 1, 1, 1, 1);
     }
 
     string IClassChoice.ClassName => this.GetType().Name;
