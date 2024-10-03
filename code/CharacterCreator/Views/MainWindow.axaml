@@ -79,10 +79,13 @@
         <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="50" AcceptsReturn="True" TextWrapping="Wrap"/>
 
         <Label Grid.Row="0" Grid.Column="2" >Height</Label>
-        <TextBox Name="height" Grid.Row="0" Grid.Column="3"/>
+        <!-- <TextBox Name="height" Grid.Row="0" Grid.Column="3"/> -->
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="100" Width="200" FormatString="0" Minimum="1" Name="hei" Grid.Row="0" Grid.Column="3"/>
 
         <Label Grid.Row="1" Grid.Column="2" >Width</Label>
-        <TextBox Name="width" Grid.Row="1" Grid.Column="3"/>
+        <!-- <TextBox Name="width" Grid.Row="1" Grid.Column="3"/> -->
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="100" Width="200" FormatString="0" Minimum="1" Name="wid" Grid.Row="1" Grid.Column="3"/>
+
     </Grid>
 
     <Separator Height="20" Background="Gray" />
@@ -109,19 +112,19 @@
         <!-- Stats grid -->
 
         <TextBlock Grid.Row="0" Grid.Column="0" >Vitality</TextBlock>
-        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="vit" Grid.Row="0" Grid.Column="1"/>
-
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Vitality}" Width="300" FormatString="0" Minimum="1" Name="vit" Grid.Row="0" Grid.Column="1"/>
+        
         <TextBlock Grid.Row="1" Grid.Column="0" >Endurance</TextBlock>
-        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="end" Grid.Row="1" Grid.Column="1"/>
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Endurance}" Width="300" FormatString="0" Minimum="1" Name="end" Grid.Row="1" Grid.Column="1"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0" >Strength</TextBlock>
-        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="str" Grid.Row="2" Grid.Column="1"/>
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Strength}" Width="300" FormatString="0" Minimum="1" Name="str" Grid.Row="2" Grid.Column="1"/>
 
         <TextBlock Grid.Row="3" Grid.Column="0" >Skill</TextBlock>
-        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="ski" Grid.Row="3" Grid.Column="1"/>
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Skill}" Width="300" FormatString="0" Minimum="1" Name="ski" Grid.Row="3" Grid.Column="1"/>
 
         <TextBlock Grid.Row="4" Grid.Column="0" >Arcane</TextBlock>
-        <NumericUpDown IsReadOnly="True" Value="10" Width="300" FormatString="0" Minimum="1" Name="arc" Grid.Row="4" Grid.Column="1"/>
+        <NumericUpDown IsReadOnly="{Binding ReadOnlyOn}" Value="{Binding Arcane}" Width="300" FormatString="0" Minimum="1" Name="arc" Grid.Row="4" Grid.Column="1"/>
 
     </Grid>
 

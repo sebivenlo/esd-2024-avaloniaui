@@ -10,16 +10,16 @@ class YourCharacter
   private int height;
   private int width;
 
-  private Dictionary<string, int> stats =  new Dictionary<string, int>();
+  private IClassChoice chosenClass;
 
-  public YourCharacter(string name, string gender, string quote, int height, int width, Dictionary<string, int> stats)
+  public YourCharacter(string name, string gender, string quote, int height, int width, IClassChoice _class)
   {
     this.name = name;
     this.gender = gender;
     this.quote = quote;
     this.height = height;
     this.width = width;
-    this.stats = stats;
+    this.chosenClass = _class;
   }
 
   public string Name
@@ -52,8 +52,9 @@ class YourCharacter
     set {width = value; }
   }
 
-  public Dictionary<string, int> Stats
+  public IClassChoice ChosenClass
   {
-    get {return stats;}
+    get {return chosenClass; }
+    set {chosenClass = value; }
   }
 }
