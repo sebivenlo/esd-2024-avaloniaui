@@ -10,7 +10,7 @@ namespace CharacterCreator.ViewModels;
 public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
 {
     private List<IClassChoice?> _classChoices;
-    private YourCharacter character;
+    // private YourCharacter character;
     public List<IClassChoice?> ClassChoices
     {
         get => _classChoices;
@@ -121,11 +121,15 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     public MainWindowViewModel()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     {
         ReadOnlyOn = true;
         LoadClassChoices();
+#pragma warning disable CS8601 // Possible null reference assignment.
         SelectedClass = ClassChoices.FirstOrDefault();
+#pragma warning restore CS8601 // Possible null reference assignment.
         HeightCharacter = 200;
         WidthCharacter = 80;
     }
@@ -172,7 +176,9 @@ public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         WidthCharacter = 80;
     }
 
+#pragma warning disable CS8612 // Nullability of reference types in type doesn't match implicitly implemented member.
     public new event PropertyChangedEventHandler PropertyChanged;
+#pragma warning restore CS8612 // Nullability of reference types in type doesn't match implicitly implemented member.
 
     protected new virtual void OnPropertyChanged(string propertyName)
     {

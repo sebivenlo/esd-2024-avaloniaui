@@ -1,20 +1,22 @@
 {
   "name": "Avalonia and C# Dev Kit",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+  "build": {
+    "dockerfile": "../dockerfile"
+  },
   "customizations": {
-      "vscode": {
-          "extensions": [
-              "AvaloniaTeam.vscode-avalonia",
-              "ms-dotnettools.csdevkit"
-          ]
-      }
+    "vscode": {
+      "extensions": [
+        "AvaloniaTeam.vscode-avalonia",
+        "ms-dotnettools.csdevkit"
+      ]
+    }
   },
   "settings": {
-      "terminal.integrated.defaultProfile.linux": "/bin/bash"
+    "terminal.integrated.defaultProfile.linux": "/bin/bash"
   },
-  "postCreateCommand": "dotnet restore && dotnet new install Avalonia.Templates && dotnet restore",
+  "postCreateCommand": "dotnet restore && dotnet new install Avalonia.Templates && dotnet add package Avalonia.X11 --version 11.1.0",
   "mounts": [
-      "source=${localWorkspaceFolder}/,target=/workspace,type=bind"
+    "source=${localWorkspaceFolder}/,target=/workspace,type=bind"
   ],
   "workspaceFolder": "/workspace"
 }

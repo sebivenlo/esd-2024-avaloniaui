@@ -1,0 +1,28 @@
+# Extend the official .NET 8.0 image
+FROM mcr.microsoft.com/devcontainers/dotnet:8.0
+
+# Install necessary native dependencies for SkiaSharp and Avalonia UI
+RUN apt-get update && apt-get install -y \
+    libfontconfig1 \
+    libfreetype6 \
+    libglib2.0-0 \
+    libx11-6 \
+    libxext6 \
+    libxrender1 \
+    libxcursor1 \
+    libxrandr2 \
+    libxinerama1 \
+    libxfixes3 \
+    libxdamage1 \
+    libxi6 \
+    libexpat1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Optionally, set the environment variable to specify the SkiaSharp backend (OpenGL)
+ENV SKIASHARP_BACKEND gl
+
+# Set the working directory
+WORKDIR /workspace
+
+# Start Xvfb and then run the app
+# CMD xvfb-run -s "-screen 0 1024x768x24" dotnet run
