@@ -10,10 +10,12 @@ Electron
 Avalonia UI uses C# and .NET, which can be advantageous if you're already familiar with this ecosystem1. This contrasts with Flutter (which uses Dart) and Electron (which uses JavaScript/TypeScript).
 
 # UI Rendering Approach
-Avalonia UI employs a custom drawing engine powered by Skia, similar to Flutter1. This approach offers:
-Consistency: Your app will have the same look and feel across all platforms1.
+Avalonia UI employs a custom drawing engine powered by Skia, similar to Flutter. This approach offers:
+Consistency: Your app will have the same look and feel across all platforms.
 Flexibility: Greater control over UI design and custom elements.
 Simplified Maintenance: UI code remains the same across platforms.
+
+https://devclass.com/2023/07/10/avalonia-11-released-cross-platform-framework-gets-new-renderer-plus-ios-and-android-support/
 
 # Performance
 Avalonia UI apps offer native performance and consume significantly fewer resources compared to Electron apps, which use web technologies.

@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|c:\\users\\moism\\desktop\\fontys_2024_2025\\esd\\esd-2024-avaloniaui\\testprojects\\getstartedapp\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09A88C5F-A0E3-4276-89C4-8B8C877DAC79}|GetStartedApp.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T12:11:30.323Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -25,7 +42,7 @@
               "ToolTip": "C:\\Users\\moism\\Desktop\\Fontys_2024_2025\\ESD\\esd-2024-avaloniaui\\testprojects\\GetStartedApp\\Views\\MainWindow.axaml",
               "RelativeToolTip": "Views\\MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-30T10:13:01.581Z",
+              "WhenOpened": "2024-10-03T11:12:56.281Z",
               "EditorCaption": ""
             }
           ]
