@@ -1,0 +1,23 @@
+{
+    "name": "Avalonia Dev Container",
+    "dockerFile": "../dockerfile",
+    "context": "..",
+    "runArgs": ["--net=host"],
+
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "/bin/bash"
+    },
+
+    "extensions": [
+        "AvaloniaTeam.vscode-avalonia",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscode-dotnet-runtime"
+    ],
+
+    "postCreateCommand": "dotnet restore",
+
+    "remoteUser": "root",
+
+    "forwardPorts": [5000]
+}

@@ -1,0 +1,38 @@
+# Use .NET 8 SDK as the base image
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+# Install system dependencies required for SkiaSharp/Avalonia
+RUN apt-get update && apt-get install -y \
+    libfontconfig1 \
+    libgl1-mesa-dev \
+    libx11-dev \
+    libxext-dev \
+    libxrender-dev \
+    libxcursor-dev \
+    libxfixes-dev \
+    libxi-dev \
+    libxrandr-dev \
+    libxtst-dev \
+    libexpat1 \
+    --no-install-recommends && rm -rf /var/lib/apt/lists/*
+
+# Install Avalonia templates
+RUN dotnet new install Avalonia.Templates
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the project files into the container
+COPY . /app
+
+# Restore project dependencies
+RUN dotnet restore
+
+# Build the project
+RUN dotnet build
+
+# Expose a port (if required by your app)
+EXPOSE 5000
+
+# Run the application (you can modify this if your project runs differently)
+CMD ["dotnet", "run"]

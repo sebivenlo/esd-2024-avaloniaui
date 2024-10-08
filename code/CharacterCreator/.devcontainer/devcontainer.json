@@ -1,3 +1,5 @@
+// Misschien de dockerfile loskoppelen van de container?
+
 {
   "name": "Avalonia and C# Dev Kit",
   "build": {
