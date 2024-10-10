@@ -1,11 +1,13 @@
-1. Traverse to CharacterCreatorCrossPlatform (cd CharacterCreatorCrossPlatform)
-2. Perform "dotnet clean"
-3. Perform "dotnet build"
-4. Traverse to CharacterCreatorCrossPlatform.Browser
-5. Perform "dotnet run"
+Upon opening the workshop project:
 
-In case step 5 doesn't work, perform the following
+1. Traverse to CharacterCreatorCrossPlatform (cd CharacterCreatorCrossPlatform)
+2. Run "dotnet build"
+3. Traverse to CharacterCreatorCrossPlatform.Browser
+4. Run "dotnet run"
+
+In case step 4 doesn't work, run the following:
+dotnet dev-certs https --trust
+
+Other useful commands:
 - dotnet clean
 - dotnet restore
-- dotnet build
-- dotnet run
