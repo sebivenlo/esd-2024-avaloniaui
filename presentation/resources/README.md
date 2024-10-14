@@ -14,4 +14,8 @@ https://www.youtube.com/watch?v=UZJJq9Obz8U
 
 https://stackshare.io/stackups/avalonia-vs-flutter
 
+https://stackshare.io/stackups/avalonia-vs-electron
+
+https://avaloniaui.net/xpf
+
 
