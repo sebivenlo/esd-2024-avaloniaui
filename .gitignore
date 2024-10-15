@@ -4,3 +4,4 @@
 *.pdb
 /code/CharacterCreator/obj
 /code/CharacterCreator/bin
+/workshop/CharacterCreatorCrossPlatform/CharacterCreatorCrossPlatform/.avalonia-build-tasks

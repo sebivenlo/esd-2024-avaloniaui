@@ -10,9 +10,7 @@
 
     "extensions": [
         "AvaloniaTeam.vscode-avalonia",
-        "ms-dotnettools.csharp",
-        "ms-dotnettools.csdevkit",
-        "ms-dotnettools.vscode-dotnet-runtime"
+        "ms-dotnettools.csdevkit"
     ],
 
     "postCreateCommand": "dotnet dev-certs https --trust",
@@ -20,4 +18,7 @@
     "remoteUser": "root",
 
     "forwardPorts": [5000]
+    // "ms-dotnettools.csharp",
+    // "ms-dotnettools.csdevkit",
+    // "ms-dotnettools.vscode-dotnet-runtime"
 }

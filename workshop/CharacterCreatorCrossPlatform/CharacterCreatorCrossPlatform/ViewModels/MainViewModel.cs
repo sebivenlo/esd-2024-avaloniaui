@@ -14,7 +14,6 @@ public partial class MainViewModel : ViewModelBase, INotifyPropertyChanged
     // private string _greeting = "Welcome to Avalonia!";
 
     private List<IClassChoice?> _classChoices;
-    // private YourCharacter character;
     public List<IClassChoice?> ClassChoices
     {
         get => _classChoices;
@@ -125,6 +124,72 @@ public partial class MainViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
 
+    private string _charactername;
+    public string CharacterName
+    {
+        get => _charactername;
+        set
+        {
+            _charactername = value;
+            OnPropertyChanged(nameof(CharacterName));
+        }
+    }
+
+    private string _characterquote;
+    public string CharacterQuote
+    {
+        get => _characterquote;
+        set
+        {
+            _characterquote = value;
+            OnPropertyChanged(nameof(CharacterQuote));
+        }
+    }
+
+    private string _headColor;
+    public string HeadColor
+    {
+        get => _headColor;
+        set
+        {
+            _headColor = value;
+            OnPropertyChanged(nameof(HeadColor));
+        }
+    }
+
+    private string _torsoColor;
+    public string TorsoColor
+    {
+        get => _torsoColor;
+        set
+        {
+            _torsoColor = value;
+            OnPropertyChanged(nameof(TorsoColor));
+        }
+    }
+
+    private string _armsColor;
+    public string ArmsColor
+    {
+        get => _armsColor;
+        set
+        {
+            _armsColor = value;
+            OnPropertyChanged(nameof(ArmsColor));
+        }
+    }
+
+    private string _legsColor;
+    public string LegsColor
+    {
+        get => _legsColor;
+        set
+        {
+            _legsColor = value;
+            OnPropertyChanged(nameof(LegsColor));
+        }
+    }
+
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     public MainViewModel()
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
@@ -134,8 +199,13 @@ public partial class MainViewModel : ViewModelBase, INotifyPropertyChanged
 #pragma warning disable CS8601 // Possible null reference assignment.
         SelectedClass = ClassChoices.FirstOrDefault();
 #pragma warning restore CS8601 // Possible null reference assignment.
-        HeightCharacter = 200;
-        WidthCharacter = 80;
+        HeightCharacter = 300;
+        WidthCharacter = 225;
+
+        _headColor = "Green";
+        _armsColor = "Cyan";
+        _torsoColor = "Blue";
+        _legsColor = "Red";
     }
 
     private void LoadClassChoices()
@@ -176,8 +246,8 @@ public partial class MainViewModel : ViewModelBase, INotifyPropertyChanged
 
     private void ResetHeightAndWidth()
     {
-        HeightCharacter = 200;
-        WidthCharacter = 80;
+        HeightCharacter = 300;
+        WidthCharacter = 250;
     }
 
 #pragma warning disable CS8612 // Nullability of reference types in type doesn't match implicitly implemented member.

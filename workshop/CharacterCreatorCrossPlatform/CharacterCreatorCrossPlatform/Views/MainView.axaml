@@ -13,8 +13,9 @@
   </Design.DataContext>
 
   <Grid Margin="20">
-        <!-- Define two rows and two columns -->
+        <!-- Grid is made from two rows and two columns -->
         <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -43,7 +44,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Row="0" Grid.Column="0">Name</Label>
-                <TextBox Name="name" Grid.Row="0" Grid.Column="1"/>
+                <TextBox Name="name" Grid.Row="0" Grid.Column="1" Text="{Binding CharacterName, Mode=TwoWay}" />
 
                 <Label Grid.Row="1" Grid.Column="0">Gender</Label>
                 <ComboBox Name="gen" Grid.Row="1" Grid.Column="1" MaxDropDownHeight="100" SelectedIndex="0">
@@ -61,7 +62,7 @@
                 </ComboBox>
 
                 <Label Grid.Row="3" Grid.Column="0">Victory Quote</Label>
-                <TextBox Name="desc" Grid.Row="3" Grid.Column="1" Height="50" AcceptsReturn="True" TextWrapping="Wrap"/>
+                <TextBox Name="quote" Grid.Row="3" Text="{Binding CharacterQuote, Mode=TwoWay}" Grid.Column="1" Height="50" AcceptsReturn="True" TextWrapping="Wrap"/>
             </Grid>
         </StackPanel>
 
@@ -85,7 +86,7 @@
             </Grid>
         </StackPanel>
 
-        <!-- Bottom-left: Vitality, Endurance, Strength, Skill, and Arcane -->
+        <!-- Middle-left: Vitality, Endurance, Strength, Skill, and Arcane -->
         <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
             <Grid>
                 <Grid.RowDefinitions>
@@ -117,24 +118,79 @@
             </Grid>
         </StackPanel>
 
-        <!-- Bottom-right: Canvas -->
-        <Canvas x:Name="CharacterCanvas" Background="White" Width="300" Height="270" Grid.Row="1" Grid.Column="1" Margin="10">
+        <!-- Middle-right: Canvas -->
+        <Canvas x:Name="CharacterCanvas" Width="300" Height="270" Grid.Row="1" Grid.Column="1" Margin="10">
             <Grid Width="{Binding Width, ElementName=CharacterCanvas}" Height="{Binding Height, ElementName=CharacterCanvas}">
                 <Viewbox Stretch="Fill" Width="{Binding WidthCharacter}" Height="{Binding HeightCharacter}">
                     <Grid>
                         <!-- Head -->
-                        <Ellipse Fill="Green" Width="58" Height="58" Margin="0,0,0,142"/>
+                        <Ellipse Fill="{Binding HeadColor}" Width="58" Height="58" Margin="0,0,0,142"/>
                         <!-- Torso -->
-                        <Rectangle Fill="Blue" Width="75" Height="80" Margin="0,58,0,62"/>
+                        <Rectangle Fill="{Binding TorsoColor}" Width="75" Height="80" Margin="0,58,0,62"/>
+                        <!-- Right arm -->
+                        <Rectangle Fill="{Binding ArmsColor}" Width="60" Height="20" Margin="135,0,0,64"/>
+                        <!-- Right left -->
+                        <Rectangle Fill="{Binding ArmsColor}" Width="60" Height="20" Margin="0,0,135,64"/>
                         <!-- Right leg -->
-                        <Rectangle Fill="Red" Width="20" Height="60" Margin="0,138,55,2"/>
+                        <Rectangle Fill="{Binding LegsColor}" Width="20" Height="60" Margin="0,138,55,2"/>
                         <!-- Left leg-->
-                        <Rectangle Fill="Red" Width="20" Height="60" Margin="55,138,0,2"/>
+                        <Rectangle Fill="{Binding LegsColor}" Width="20" Height="60" Margin="55,138,0,2"/>
                     </Grid>
                 </Viewbox>
             </Grid>
         </Canvas>
 
-    </Grid>
 
+        <!-- Bottom-left: Colors for body parts -->
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Implement challenge 3 here -->
+
+                <Label Grid.Row="0" Grid.Column="0">Head</Label>
+                <TextBox Name="headColor" Grid.Row="0" Grid.Column="1" Text="{Binding HeadColor}" />
+                <Label Grid.Row="1" Grid.Column="0">Torso</Label>
+                <TextBox Name="torsoColor" Grid.Row="1" Grid.Column="1" Text="{Binding TorsoColor}" />
+                <Label Grid.Row="2" Grid.Column="0">Arms</Label>
+                <TextBox Name="armsColor" Grid.Row="2" Grid.Column="1" Text="{Binding ArmsColor}" />
+                <Label Grid.Row="3" Grid.Column="0">Legs</Label>
+                <TextBox Name="legsColor" Grid.Row="3" Grid.Column="1" Text="{Binding LegsColor}" />
+
+            </Grid>
+        </StackPanel>
+
+        <!-- Bottom-right: Name and Victory Quote -->
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+            <!-- Implement challenge 1 here -->
+            
+            <Label Grid.Row="0" Grid.Column="0">Name: </Label>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding CharacterName}" />
+            <Label Grid.Row="1" Grid.Column="0">Victory Quote: </Label>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding CharacterQuote}" />
+
+            </Grid>
+        </StackPanel>
+    </Grid>
 </UserControl>
