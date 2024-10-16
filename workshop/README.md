@@ -1,6 +1,6 @@
 Folders you're going to use for the workshop:<br/><br/>
-<b>CharactorCreatorCrossPlatform:</b> Directory that contains the models, views and viewmodels. Use this to make changes to the code.<br/><br/>
-<b>CharactorCreatorCrossPlatform.Browser:</b> Avalonia UI build which runs via the browser. Use this to run your CharacterCreator from the dev container terminal.<br/><br/>
+<b>CharacterCreatorCrossPlatform (root)/CharacterCreatorCrossPlatform:</b> Directory that contains the models, views and viewmodels. Use this to make changes to the code and build the project (only once).<br/><br/>
+<b>CharacterCreatorCrossPlatform (root)/CharacterCreatorCrossPlatform.Browser:</b> Avalonia UI build which runs via the browser. Use this to run your CharacterCreator from the dev container terminal. When you make changes to the code you can also build in this directory.<br/><br/>
 
 How to open and run the project:
 | Step | Description |
